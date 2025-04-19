@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Velista';
+  src: url('fonts/VELISTA.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdf4e3;
+  color: #4a4a4a;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  padding: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  gap: 1rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+
+.hero h1 {
+  font-size: 5rem;
+  font-family: 'Velista', cursive;
+  color: #4a4a2c;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
+.profile-pic {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.designer-title {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.designer-title p:nth-child(1) {
+  font-size: 2.5rem;
+}
+
+.designer-title p:nth-child(2) {
+  font-size: 4rem;
+}
+
+.designer-title p:nth-child(3) {
+  font-size: 5rem;
+}
+
+.designer-title p {
+  color: #cda349;
+  margin: 0.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+
+
+.star-left {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  width: 180px;
+  z-index: 0;
+}
+
+.star-left img {
+  width: 100%;
+}
+
+.star-right {
+  position: absolute;
+  top: 27%;
+  right: 3%;
+  width: 180px;
+  z-index: 0;
+}
+
+.star-right img {
+  width: 100%;
+}
